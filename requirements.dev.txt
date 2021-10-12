@@ -1,0 +1,15 @@
+-r requirements.txt
+
+watchdog
+
+ipython
+ipdb
+httpie
+
+flake8-builtins
+flake8-bugbear
+flake8-comprehensions
+flake8-pytest-style
+pep8-naming
+dlint
+python-dotenv
