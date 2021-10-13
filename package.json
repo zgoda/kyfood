@@ -1,25 +1,24 @@
 {
-	"private": true,
-	"scripts": {
-		"start": "wmr",
-		"build": "wmr build --prerender",
-		"serve": "wmr serve"
-	},
-	"eslintConfig": {
-		"extends": "preact"
-	},
-	"dependencies": {
-		"preact": "^10.5.14",
-		"preact-iso": "^2.3.0"
-	},
-	"devDependencies": {
-		"eslint": "^7.32.0",
-		"eslint-config-preact": "^1.1.4",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-prettier": "^4.0.0",
-		"eslint-plugin-react-hooks": "^4.2.0",
-		"prettier": "^2.4.1",
-		"sass": "^1.42.1",
-		"wmr": "^3.7.2"
-	}
+  "private": true,
+  "scripts": {
+    "start": "wmr",
+    "build": "wmr build --prerender",
+    "serve": "wmr serve"
+  },
+  "dependencies": {
+    "@csstools/normalize.css": "^12.0.0",
+    "milligram": "^1.4.1",
+    "preact": "^10.5.15",
+    "preact-iso": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-preact": "^1.1.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.4.1",
+    "sass": "^1.42.1",
+    "wmr": "^3.7.2"
+  }
 }
