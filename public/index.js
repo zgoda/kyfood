@@ -11,7 +11,7 @@ import Home from './pages/home/index.js';
 import NotFound from './pages/_404.js';
 import Header from './header.js';
 
-import '@csstools/normalize.css';
+import '@csstools/normalize.css/normalize.css';
 import './style.scss';
 
 const About = lazy(() => import('./pages/about/index.js'));
