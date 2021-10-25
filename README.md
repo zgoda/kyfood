@@ -1,3 +1,3 @@
 # KY Food - Know Your Food
 
-A Jamstack experiment.
+A Jamstack experiment: Cloudinary & Fauna DB.
