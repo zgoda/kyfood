@@ -1,9 +1,9 @@
 #! /bin/bash
 
-msg="$VERCEL_GIT_COMMIT_MESSAGE" | tr '[:upper:]' '[:lower:]'
+msg=${VERCEL_GIT_COMMIT_MESSAGE,,}
 
-if [[ "$msg" == *"ci skip"* ]] ; then
+if [[ "$msg" = *"ci skip"* ]] ; then
 	exit 0
-else
-	exit 1
 fi
+
+exit 1
