@@ -6,6 +6,8 @@ ipython
 ipdb
 httpie
 
+black
+
 flake8-builtins
 flake8-bugbear
 flake8-comprehensions

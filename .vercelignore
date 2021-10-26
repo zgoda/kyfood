@@ -1,0 +1,13 @@
+requirements.dev.txt
+run.py
+__init__.py
+venv
+.vscode
+LICENSE
+README.*
+.editorconfig
+package-lock.json
+node_modules
+.env
+api/_local.py
+setup.cfg
