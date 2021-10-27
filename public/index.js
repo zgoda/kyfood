@@ -1,3 +1,4 @@
+import 'preact/devtools';
 import {
   LocationProvider,
   Router,
@@ -7,28 +8,30 @@ import {
   hydrate,
   prerender as ssr,
 } from 'preact-iso';
-import Home from './pages/home/index.js';
-import NotFound from './pages/_404.js';
-import Header from './header.js';
+import NotFound from './pages/_404';
+import { Header } from './components/header';
 
 import '@csstools/normalize.css/normalize.css';
 import './style.scss';
 
-const About = lazy(() => import('./pages/about/index.js'));
+const Home = lazy(() => import('./pages/home.js'));
+const About = lazy(() => import('./pages/about.js'));
 
 export function App() {
   return (
     <LocationProvider>
-      <div class="app">
+      <main class="main">
         <Header />
-        <ErrorBoundary>
-          <Router>
-            <Route path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route default component={NotFound} />
-          </Router>
-        </ErrorBoundary>
-      </div>
+        <article class="container">
+          <ErrorBoundary>
+            <Router>
+              <Route path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route default component={NotFound} />
+            </Router>
+          </ErrorBoundary>
+        </article>
+      </main>
     </LocationProvider>
   );
 }

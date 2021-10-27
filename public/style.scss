@@ -1,11 +1,11 @@
 @charset 'utf-8';
 
 $color-initial: #fff !default;
-$color-primary: #2A9D8F !default;
-$color-secondary: #264653 !default;
-$color-tertiary: #E9C46A !default;
-$color-quaternary: #F4A261 !default;
-$color-quinary: #E76F51 !default;
+$color-primary: #606c38 !default;
+$color-secondary: #283618 !default;
+$color-tertiary: #fefae0 !default;
+$color-quaternary: #dda15e !default;
+$color-quinary: #bc6c25 !default;
 
 @import '../node_modules/milligram/src/milligram.sass';
 
@@ -13,4 +13,12 @@ $color-quinary: #E76F51 !default;
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, Lato, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+@import './styles/main.scss';
+@import './styles/navigation.scss';
+@import './styles/footer.scss';
+
+.main article.container {
+  padding-top: 5.5rem;
 }
