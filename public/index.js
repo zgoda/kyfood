@@ -1,4 +1,7 @@
-import 'preact/devtools';
+if (process.env.NODE_ENV === 'development') {
+  require('preact/debug');
+}
+
 import {
   LocationProvider,
   Router,
