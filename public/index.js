@@ -1,7 +1,4 @@
-if (process.env.NODE_ENV === 'development') {
-  require('preact/debug');
-}
-
+import 'preact/debug';
 import {
   LocationProvider,
   Router,
