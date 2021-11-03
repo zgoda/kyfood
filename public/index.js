@@ -8,7 +8,9 @@ import {
   hydrate,
   prerender as ssr,
 } from 'preact-iso';
+
 import NotFound from './pages/_404';
+import { Footer } from './components/footer';
 import { Header } from './components/header';
 
 import '@csstools/normalize.css/normalize.css';
@@ -31,6 +33,7 @@ export function App() {
             </Router>
           </ErrorBoundary>
         </article>
+        <Footer />
       </main>
     </LocationProvider>
   );
