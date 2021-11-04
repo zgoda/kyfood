@@ -22,7 +22,7 @@ const About = lazy(() => import('./pages/about.js'));
 export function App() {
   return (
     <LocationProvider>
-      <main class="main">
+      <main>
         <Header />
         <article class="container">
           <ErrorBoundary>
