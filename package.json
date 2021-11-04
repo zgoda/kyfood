@@ -3,7 +3,8 @@
   "scripts": {
     "start": "wmr",
     "build": "wmr build --prerender",
-    "serve": "wmr serve"
+    "serve": "wmr serve",
+    "test": "jest"
   },
   "dependencies": {
     "@csstools/normalize.css": "^12.0.0",
@@ -14,12 +15,16 @@
     "preact-iso": "^2.3.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/preact": "^2.0.1",
     "dotenv": "^10.0.0",
     "eslint": "^7.32.0",
     "eslint-config-preact": "^1.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^27.3.1",
+    "jest-preset-preact": "^4.0.5",
     "prettier": "^2.4.1",
     "sass": "^1.43.4",
     "wmr": "^3.7.2"
